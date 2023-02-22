@@ -1,5 +1,6 @@
 src
 examples
+images
 rollup.config.mjs
 tsconfig.json
 .cache

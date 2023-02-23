@@ -4,4 +4,6 @@ images
 rollup.config.mjs
 tsconfig.json
 .cache
+.parcel-cache
+out
 README.md

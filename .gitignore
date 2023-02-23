@@ -5,3 +5,5 @@ package-lock.json
 yalc.lock
 yarn-error.log
 .cache
+out
+.parcel-cache

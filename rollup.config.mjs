@@ -1,5 +1,4 @@
 import typescript from '@rollup/plugin-typescript'
-import postcss from 'rollup-plugin-postcss'
 import image from '@rollup/plugin-image'
 
 const outputDefaults = {
@@ -26,9 +25,6 @@ export default {
     typescript({ tsconfig: './tsconfig.json' }),
     image({
       extensions: /\.(png|jpg|jpeg|gif|svg)$/,
-    }),
-    postcss({
-      extract: false,
     }),
   ],
 

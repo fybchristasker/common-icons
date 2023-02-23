@@ -1,4 +1,5 @@
 import React from 'react'
+import { createRoot } from 'react-dom/client'
 import ReactDOM from 'react-dom'
 import Mask from '../src/File'
 import * as source from '../src/data'
@@ -22,4 +23,6 @@ function Page() {
   )
 }
 
-ReactDOM.render(<Page />, document.getElementById('page'))
+const container = document.getElementById('page')
+const root = createRoot(container)
+root.render(<Page />)

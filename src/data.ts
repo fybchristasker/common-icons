@@ -42,6 +42,18 @@ import docker from './data/docker'
 import sketch from './data/sketch'
 import ae from './data/ae'
 import ps from './data/ps'
+import whatsapp from './data/whatsapp'
+import gitlab from './data/gitlab'
+import react from './data/react'
+import angular from './data/angular'
+import vue from './data/vue'
+import amazon from './data/amazon'
+import keep from './data/keep'
+import npm from './data/npm'
+import vscode from './data/vscode'
+import shopify from './data/shopify'
+import tailwind from './data/tailwind'
+import html from './data/html'
 
 const data = {
   wechat,
@@ -88,6 +100,18 @@ const data = {
   ps,
   ae,
   sketch,
+  whatsapp,
+  gitlab,
+  react,
+  angular,
+  vue,
+  amazon,
+  npm,
+  keep,
+  vscode,
+  shopify,
+  tailwind,
+  html,
 }
 
 export default data

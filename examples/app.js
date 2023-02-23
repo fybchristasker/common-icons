@@ -4,9 +4,14 @@ import Mask from '../src/File'
 import * as source from '../src/data'
 
 function Page() {
-  console.info(Object.keys(source.default))
   return (
-    <div style={{ display: 'flex', justifyContent: 'start', flexWrap: 'wrap' }}>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'start',
+        flexWrap: 'wrap',
+      }}
+    >
       {Object.keys(source.default).map((v) => (
         <div style={{ margin: 24, textAlign: 'center' }} key={v}>
           <Mask name={v} />

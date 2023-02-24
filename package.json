@@ -1,15 +1,19 @@
 {
   "name": "react-common-icons",
-  "version": "0.1.0",
-  "description": "variable svg icons in react",
+  "version": "0.2.1",
+  "description": "variable common svg icons in react",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/typings/typing.d.ts",
+  "targets": {
+    "module": false,
+    "main": false,
+    "types": false
+  },
   "scripts": {
     "build": "rollup -c",
     "dev:demo": "parcel examples/index.html --dist-dir out",
-    "build:demo": "parcel build examples/index.html --dist-dir out",
-    "start:demo": "npm run dev:demo"
+    "build:demo": "parcel build examples/index.html --dist-dir out"
   },
   "author": "fybchristasker",
   "license": "MIT",

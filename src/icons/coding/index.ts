@@ -8,6 +8,11 @@ import oschina from './oschina'
 import gitee from './gitee'
 import npm from './npm'
 import html from './html'
+import markdown from './markdown'
+import javascript from './javascript'
+import typescript from './typescript'
+import gatsby from './gatsby'
+import git from './git'
 
 export default {
   github,
@@ -20,4 +25,9 @@ export default {
   gitee,
   npm,
   html,
+  markdown,
+  javascript,
+  typescript,
+  gatsby,
+  git,
 }

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/logo.png" align="center" width="150px" />
+</p>
+
 <h1 align="center">React Common Icons</h1>
 
 ## Installation

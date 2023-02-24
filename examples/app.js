@@ -1,10 +1,9 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import ReactDOM from 'react-dom'
 import Mask from '../src/File'
 import * as source from '../src/data'
 
-function Page() {
+const Page = () => {
   return (
     <div
       style={{

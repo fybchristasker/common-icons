@@ -1,3 +1,3 @@
-import File from './File'
+import App from './svg'
 
-export default File
+export default App

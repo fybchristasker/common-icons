@@ -1,6 +1,6 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import Mask from '../src/File'
+import Icon from '../src/svg'
 import * as source from '../src/data'
 
 const Page = () => {
@@ -14,7 +14,7 @@ const Page = () => {
     >
       {Object.keys(source.default).map((v) => (
         <div style={{ margin: 24, textAlign: 'center' }} key={v}>
-          <Mask name={v} />
+          <Icon name={v} />
           <div style={{ fontSize: 12 }}>{v}</div>
         </div>
       ))}

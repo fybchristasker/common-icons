@@ -2,52 +2,48 @@ import React, { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import Icon from '../src/svg'
 import * as source from '../src/data'
+import './app.css'
 
 const Page = () => {
   const [value, setValue] = useState('')
+  const count = Object.values(source.default).length
+  const [selected, setSelected] = useState(false)
+  const [selectedIcon, setSelectedIcon] = useState('')
+
+  const copyIcon = (id) => {
+    navigator.clipboard.writeText(`<Icon name='${id}' />`)
+    setSelected(true)
+    setSelectedIcon(id)
+    setTimeout(() => {
+      setSelected(false)
+      setSelectedIcon('')
+    }, 2000)
+  }
+
   return (
-    <div
-      style={{
-        width: 800,
-        maxWidth: '100%',
-        margin: '0 auto',
-      }}
-    >
-      <h1 style={{ textAlign: 'center', fontSize: 30 }}>react-common-icons</h1>
-      <div style={{ margin: 26 }}>
+    <div className="container">
+      <h1 className="package-name">react-common-icons</h1>
+      <div className="icons-margin">
         <input
           onChange={(e) => setValue(e.target.value)}
-          style={{
-            width: '100%',
-            height: 40,
-            paddingLeft: 6,
-            outline: 0,
-          }}
+          className="search-input"
           autoFocus
-          placeholder="Find your icon here"
+          placeholder={`Find your icon in ${count} svg icons`}
         />
       </div>
-      <div
-        style={{
-          flexWrap: 'wrap',
-          display: 'flex',
-        }}
-      >
+      <div className="icons-container">
         {Object.keys(source.default)
           .filter((s) => s.includes(value))
           .map((v) => (
-            <div
-              style={{
-                width: 100,
-                maxWidth: '25%',
-                marginTop: 24,
-                marginBottom: 24,
-                textAlign: 'center',
-              }}
-              key={v}
-            >
-              <Icon name={v} />
-              <div style={{ fontSize: 12 }}>{v}</div>
+            <div className="icon" key={v} id={v} onClick={() => copyIcon(v)}>
+              {selected && selectedIcon === v ? (
+                <div className="copy-icon">Copied</div>
+              ) : (
+                <>
+                  <Icon name={v} />
+                  <div>{v}</div>
+                </>
+              )}
             </div>
           ))}
       </div>

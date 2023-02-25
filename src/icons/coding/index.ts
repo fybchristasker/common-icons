@@ -13,6 +13,10 @@ import javascript from './javascript'
 import typescript from './typescript'
 import gatsby from './gatsby'
 import git from './git'
+import eslint from './eslint'
+import webpack from './webpack'
+import heroku from './heroku'
+import python from './python'
 
 export default {
   github,
@@ -30,4 +34,8 @@ export default {
   typescript,
   gatsby,
   git,
+  eslint,
+  webpack,
+  heroku,
+  python,
 }

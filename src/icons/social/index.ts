@@ -13,6 +13,9 @@ import facetime from '../social/facetime'
 import linkedin from '../social/linkedin'
 import whatsapp from '../social/whatsapp'
 import facebook from '../social/facebook'
+import douban from './douban'
+import juejin from './juejin'
+import telegram from './telegram'
 
 export default {
   wechat,
@@ -30,4 +33,7 @@ export default {
   linkedin,
   whatsapp,
   facebook,
+  douban,
+  juejin,
+  telegram,
 }

@@ -17,6 +17,9 @@ import amazon from './amazon'
 import keep from './keep'
 import vscode from './vscode'
 import shopify from './shopify'
+import paypal from './paypal'
+import trello from './trello'
+import slack from './slack'
 
 export default {
   alipay,
@@ -38,4 +41,7 @@ export default {
   keep,
   vscode,
   shopify,
+  paypal,
+  trello,
+  slack,
 }

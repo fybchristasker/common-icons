@@ -7,7 +7,7 @@ import coding from './icons/coding'
 import game from './icons/game'
 import platform from './icons/platform'
 
-const data = {
+export default {
   ...social,
   ...tool,
   ...bank,
@@ -17,5 +17,3 @@ const data = {
   ...game,
   ...platform,
 }
-
-export default data

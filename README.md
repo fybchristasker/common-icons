@@ -39,6 +39,9 @@ render(<App />, document.getElementById("app"));
 
 <img src="images/icons.png" />
 
+## Welcome PR
+
+If you need some icons, welcome PR
 ## License
 
 [MIT](https://github.com/ruilisi/react-common-icons/blob/master/LICENSE.md)

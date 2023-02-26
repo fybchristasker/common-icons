@@ -6,10 +6,12 @@ import browser from './icons/browser'
 import coding from './icons/coding'
 import game from './icons/game'
 import platform from './icons/platform'
+import apple from './icons/apple'
 
 export default {
   ...social,
   ...tool,
+  ...apple,
   ...bank,
   ...adobe,
   ...browser,

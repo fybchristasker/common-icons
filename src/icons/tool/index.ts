@@ -3,7 +3,6 @@ import dingding from './dingding'
 import wangyiyun from './wangyiyun'
 import baidu from './baidu'
 import baiduyun from './baiduyun'
-import appstore from './appstore'
 import didi from './didi'
 import huawei from './huawei'
 import xiaomi from './xiaomi'
@@ -27,7 +26,6 @@ export default {
   wangyiyun,
   baidu,
   baiduyun,
-  appstore,
   didi,
   huawei,
   xiaomi,

@@ -9,7 +9,6 @@ import youtube from '../social/youtube'
 import discord from '../social/discord'
 import pinterest from '../social/pinterest'
 import gmail from '../social/gmail'
-import facetime from '../social/facetime'
 import linkedin from '../social/linkedin'
 import whatsapp from '../social/whatsapp'
 import facebook from '../social/facebook'
@@ -29,7 +28,6 @@ export default {
   discord,
   pinterest,
   gmail,
-  facetime,
   linkedin,
   whatsapp,
   facebook,

@@ -7,6 +7,7 @@ import coding from './icons/coding'
 import game from './icons/game'
 import platform from './icons/platform'
 import apple from './icons/apple'
+import esports from './icons/esports'
 
 export default {
   ...social,
@@ -18,4 +19,5 @@ export default {
   ...coding,
   ...game,
   ...platform,
+  ...esports,
 }

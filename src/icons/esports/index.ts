@@ -1,3 +1,4 @@
+import cmbc from '../bank/cmbc'
 import c9 from './c9'
 import edg from './edg'
 import fnc from './fnc'
@@ -11,4 +12,4 @@ import tes from './tes'
 import tl from './tl'
 import we from './we'
 
-export default { tes, ig, fpx, we, jdg, edg, c9, fnc, geng, rng, tl, ra }
+export default { tes, ig, fpx, we, jdg, edg, c9, fnc, geng, rng, tl, ra, cmbc }

@@ -17,6 +17,8 @@ import eslint from './eslint'
 import webpack from './webpack'
 import heroku from './heroku'
 import python from './python'
+import rust from './rust'
+import swift from './swift'
 
 export default {
   github,
@@ -38,4 +40,6 @@ export default {
   webpack,
   heroku,
   python,
+  rust,
+  swift,
 }
